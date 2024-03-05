@@ -57,7 +57,17 @@ PCA was performed in combination with feature scaling. After the data cleaning a
 - Feature Scaling: Feature scaling was a critical step before PCA. By rescaling all features to a standard deviation of 1 and a mean of 0, this step ensured that variances subsequently calculated in PCA were not influenced by differences in scale. The scikit-learn StandardScaler class was utilized.
 - PCA: The scikit-learn PCA class was applied to the scaled data. The explained variance ratios were plotted in a bar chart and the cumulative explained variance ratios were plotted in a scree plot to investigate the results. After reviewing the charts, 80 components, which explained 80% of the variance, were chosen as an optimal number to retain for the model. The data was again run through PCA using the parameter of 80 components to be retained. The features making up the first three principal components were then extracted and their weights were examined to generate an analysis.
 
-<img src="images/scree_plot.png" width=600px>
+<img src="images/variance.png" width=400px><img src="images/scree_plot.png" width=400px>
+
+#### Principal Component Analysis Results:
+1st Principal Component
+- The first principal component is correlated with total count of allergies, dander allergy, and mold allergy. As these variables increase, the principal component increases.  
+  
+2nd Principal Component
+- The 2nd principal component is correlated with Hypertriglyceridemia, Metabolic syndrome X, and Diabetes. As these variables increase, the principal component increases.  
+
+3rd Principal Component
+- The 3rd principal component is correlated with suspected lung cancer and Carcinoma in situ of prostate. As these variables increase, the principal component increases.  
 
 ### K-Means Model
 The K-Means clustering algorithm was leveraged to perform unsupervised machine learning. The scikit-learn KMeans class was fit to the PCA data for a range of one to 30 clusters, and the resulting Sum of Squared Errors (SSE) scores and Silhouette Scores were extracted for each number of clusters. The SSE for each model was plotted in a line chart. The models were evaluated using Elbow Criterion on the SSE chart, in combination with the Silhouette Scores. Based on the results, three clusters were chosen as the optimal number of clusters for the final model. The final model was fit to the PCA data again, using the parameter of three clusters.  
