@@ -57,8 +57,12 @@ PCA was performed in combination with feature scaling. After the data cleaning a
 - Feature Scaling: Feature scaling was a critical step before PCA. By rescaling all features to a standard deviation of 1 and a mean of 0, this step ensured that variances subsequently calculated in PCA were not influenced by differences in scale. The scikit-learn StandardScaler class was utilized.
 - PCA: The scikit-learn PCA class was applied to the scaled data. The explained variance ratios were plotted in a bar chart and the cumulative explained variance ratios were plotted in a scree plot to investigate the results. After reviewing the charts, 80 components, which explained 80% of the variance, were chosen as an optimal number to retain for the model. The data was again run through PCA using the parameter of 80 components to be retained. The features making up the first three principal components were then extracted and their weights were examined to generate an analysis.
 
+<img src="images/scree_plot.png" width=600px>
+
 ### K-Means Model
 The K-Means clustering algorithm was leveraged to perform unsupervised machine learning. The scikit-learn KMeans class was fit to the PCA data for a range of one to 30 clusters, and the resulting Sum of Squared Errors (SSE) scores and Silhouette Scores were extracted for each number of clusters. The SSE for each model was plotted in a line chart. The models were evaluated using Elbow Criterion on the SSE chart, in combination with the Silhouette Scores. Based on the results, three clusters were chosen as the optimal number of clusters for the final model. The final model was fit to the PCA data again, using the parameter of three clusters.  
+
+<img src="images/line_chart.png" width=600px>
 
 ### Model Application 
 Applying the trained model to the second patient dataset identified interesting patterns among the population. The largest cluster was Cluster 0 with 677 patients, followed by Cluster 1 with 71 patients and Cluster 2 with 52 patients. The following prominent characteristics were identified for each cluster:
