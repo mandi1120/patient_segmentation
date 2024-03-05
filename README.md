@@ -11,7 +11,7 @@ This project will focus on identifying patterns among individuals who visited th
 - Python Code: [View Capstone.ipynb](Capstone.ipynb)  
 - Data Files: [View Data](data)  
   - The data for this project was provided by Synthea, an open-source, synthetic patient generator. The datasets mimic Electronic Health Records (EHR) to provide realistic (but not real) medical history for synthetic patients, enabling Health IT research and development. Source: https://synthetichealth.github.io/synthea/  
-- Project Report: [tbd](tbd)  
+- Project Report: [View the Full Written Report](Data%20Analytics%20Capstone%20Project%20Report%20AH.pdf)  
 
 ## Project Highlights 
 
@@ -74,6 +74,8 @@ The K-Means clustering algorithm was leveraged to perform unsupervised machine l
 
 <img src="images/line_chart.png" width=300px>
 
+The machine learning model performed at a fair level with a Silhouette Score of 0.29, indicating the model clustered data points that were of a reasonable (but not strong) match to other data points in the same cluster. The conclusion drawn from the score suggests there is still room for further work to be done to refine and improve the model. 
+
 ### Model Application 
 Applying the trained model to the second patient dataset identified interesting patterns among the population. 
 
@@ -90,6 +92,7 @@ The following prominent characteristics were identified for each cluster:
 
 -	Cluster 2 was driven by presence of Hypertriglyceridemia disorder or Metabolic syndrome X. Most of the patients in this cluster had at least one of these conditions. 
 <img src="images/cluster2.png" width=600px>
+
 
 #### Scatter Plot
 <img src="images/scatter_plot.png" width=600px>
