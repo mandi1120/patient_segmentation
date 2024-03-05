@@ -91,11 +91,12 @@ The following prominent characteristics were identified for each cluster:
 -	Cluster 2 was driven by presence of Hypertriglyceridemia disorder or Metabolic syndrome X. Most of the patients in this cluster had at least one of these conditions. 
 <img src="images/cluster2.png" width=600px>
 
+#### Patients Plotted by Cluster
 
-#### Scatter Plot
+##### Scatter Plots 
 <img src="images/scatter_plot.png" width=600px>
 
-#### 3D Scatter Plot
+#### 3D Scatter Plots
 <img src="images/3d_plot.png" width=600px>
 
 ### Conclusions  
