@@ -72,9 +72,14 @@ The largest cluster was Cluster 0 with 677 patients, followed by Cluster 1 with 
 <img src="images/bar_chart.png" width=300px>
 
 The following prominent characteristics were identified for each cluster:
+
 - Cluster 0 was driven by lack of or minimal presence of allergies, Hypertriglyceridemia disorder, Metabolic syndrome X, Suspected lung cancer or Carcinoma in situ of prostate.
+
 - Cluster 1 was driven by presence of allergies. All patients in this cluster had at least five allergies.
+<img src="images/cluster1.png" width=300px>
+
 -	Cluster 2 was driven by presence of Hypertriglyceridemia disorder or Metabolic syndrome X. Most of the patients in this cluster had at least one of these conditions. 
+<img src="images/cluster2.png" width=600px>
 
 #### Scatter Plot
 <img src="images/scatter_plot.png" width=600px>
