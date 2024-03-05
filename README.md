@@ -96,7 +96,7 @@ The following prominent characteristics were identified for each cluster:
 ##### Scatter Plots 
 <img src="images/scatter_plot.png" width=600px>
 
-#### 3D Scatter Plots
+##### 3D Scatter Plots
 <img src="images/3d_plot.png" width=600px>
 
 ### Conclusions  
