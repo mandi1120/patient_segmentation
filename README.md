@@ -74,8 +74,6 @@ The K-Means clustering algorithm was leveraged to perform unsupervised machine l
 
 <img src="images/line_chart.png" width=300px>
 
-The machine learning model performed at a fair level with a Silhouette Score of 0.29, indicating the model clustered data points that were of a reasonable (but not strong) match to other data points in the same cluster. The conclusion drawn from the score suggests there is still room for further work to be done to refine and improve the model. 
-
 ### Model Application 
 Applying the trained model to the second patient dataset identified interesting patterns among the population. 
 
@@ -99,6 +97,13 @@ The following prominent characteristics were identified for each cluster:
 
 #### 3D Scatter Plot
 <img src="images/3d_plot.png" width=600px>
+
+### Conclusions  
+The goal of this project was to identify shared characteristics among patients who had an emergency encounter. A patient dataset was identified, collected, cleaned, and then underwent Principal Component Analysis to select for an optimal number of components. Following PCA, the K-Means model was trained on a range of clusters, and then assessed to select for an optimal number of clusters. The final model was then applied to a new dataset for evaluation. 
+
+The machine learning model performed at a fair level with a Silhouette Score of 0.29, indicating the model clustered data points that were of a reasonable (but not strong) match to other data points in the same cluster. The conclusion drawn from the score suggests there is still room for further work to be done to refine and improve the model. 
+
+Even so, applying the trained model to the second patient dataset identified interesting patterns among the population.  
 
 ### Limitations
 A limitation of the model and analysis was the dataset. Given that the data was synthetic, it may not truly represent patterns in patients who have emergency encounters. Additionally, it is unknown if the 2020 and 2021 datasets were comprised of the same patients or a different group of patients.
