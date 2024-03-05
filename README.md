@@ -62,7 +62,7 @@ PCA was performed in combination with feature scaling. After the data cleaning a
 ### K-Means Model
 The K-Means clustering algorithm was leveraged to perform unsupervised machine learning. The scikit-learn KMeans class was fit to the PCA data for a range of one to 30 clusters, and the resulting Sum of Squared Errors (SSE) scores and Silhouette Scores were extracted for each number of clusters. The SSE for each model was plotted in a line chart. The models were evaluated using Elbow Criterion on the SSE chart, in combination with the Silhouette Scores. Based on the results, three clusters were chosen as the optimal number of clusters for the final model. The final model was fit to the PCA data again, using the parameter of three clusters.  
 
-<img src="images/line_chart.png" width=600px>
+<img src="images/line_chart.png" width=300px>
 
 ### Model Application 
 Applying the trained model to the second patient dataset identified interesting patterns among the population. The largest cluster was Cluster 0 with 677 patients, followed by Cluster 1 with 71 patients and Cluster 2 with 52 patients. The following prominent characteristics were identified for each cluster:
@@ -74,11 +74,10 @@ Applying the trained model to the second patient dataset identified interesting 
 
 <img src="images/scatter_plot.png" width=600px>
 
-<img src="images/bar_chart.png" width=300px>
-
-
 ### Conclusions
 The largest cluster was Cluster 0 with 677 patients, followed by Cluster 1 with 71 patients and Cluster 2 with 52.
+
+<img src="images/bar_chart.png" width=300px>
 
 The following prominant columns were identified for each cluster:
 - Cluster 0 was driven by lack of or minimal presence of allergies, Hypertriglyceridemia disorder, Metabolic syndrome X, Suspected lung cancer or Carcinoma in situ of prostate.
